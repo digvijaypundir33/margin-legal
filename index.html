@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Margin — Legal</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background: #FAF7F2;
+      color: #1A1510;
+      min-height: 100vh;
+    }
+    header {
+      background: #12100E;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #F5EFE0;
+      letter-spacing: 0.5px;
+    }
+    header p {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #C8960C;
+      letter-spacing: 2px;
+      font-family: -apple-system, sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    main {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 56px 24px 80px;
+    }
+    h2 {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #C8960C;
+      font-family: -apple-system, sans-serif;
+      margin-bottom: 24px;
+    }
+    .card {
+      background: #FFFFFF;
+      border: 1px solid rgba(0,0,0,0.07);
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 40px;
+    }
+    .card a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 24px;
+      text-decoration: none;
+      color: #1A1510;
+      transition: background 0.15s;
+    }
+    .card a:hover { background: #F5EFE0; }
+    .card a + a { border-top: 1px solid rgba(0,0,0,0.06); }
+    .card a span.title {
+      font-size: 17px;
+      font-weight: 400;
+    }
+    .card a span.arrow {
+      font-size: 16px;
+      color: #C8960C;
+      opacity: 0.7;
+    }
+    .support {
+      text-align: center;
+      font-family: -apple-system, sans-serif;
+      font-size: 13px;
+      color: #1A1510;
+      opacity: 0.45;
+    }
+    .support a {
+      color: #C8960C;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Margin</h1>
+    <p>Legal</p>
+  </header>
+  <main>
+    <h2>Documents</h2>
+    <div class="card">
+      <a href="privacy.html">
+        <span class="title">Privacy Policy</span>
+        <span class="arrow">›</span>
+      </a>
+      <a href="terms.html">
+        <span class="title">Terms of Use</span>
+        <span class="arrow">›</span>
+      </a>
+    </div>
+    <p class="support">
+      For support, contact <a href="mailto:digvijay.pundir33@gmail.com">digvijay.pundir33@gmail.com</a>
+    </p>
+  </main>
+</body>
+</html>
