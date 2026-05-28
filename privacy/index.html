@@ -4,110 +4,165 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy — Margin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: Georgia, 'Times New Roman', serif;
+      font-family: 'Inter', -apple-system, sans-serif;
       background: #FAF7F2;
       color: #1A1510;
       min-height: 100vh;
     }
-    header {
-      background: #12100E;
-      padding: 48px 24px 40px;
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(250, 247, 242, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(0,0,0,0.07);
+      padding: 0 24px;
+      height: 52px;
+      display: flex;
+      align-items: center;
     }
-    header a {
-      display: inline-block;
-      font-family: -apple-system, sans-serif;
-      font-size: 13px;
+    nav a.back {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 14px;
+      font-weight: 500;
       color: #C8960C;
       text-decoration: none;
-      margin-bottom: 16px;
-      opacity: 0.8;
     }
-    header a:hover { opacity: 1; }
+    nav a.back:hover { opacity: 0.75; }
+    nav .app-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: #1A1510;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    header {
+      background: #12100E;
+      padding: 52px 24px 44px;
+      text-align: center;
+    }
+    header .eyebrow {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: #C8960C;
+      margin-bottom: 12px;
+    }
     header h1 {
-      font-size: 28px;
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
       font-weight: 700;
       color: #F5EFE0;
+      line-height: 1.2;
     }
-    header p {
-      margin-top: 8px;
+    header .updated {
+      margin-top: 10px;
       font-size: 12px;
       color: #F5EFE0;
-      opacity: 0.4;
-      font-family: -apple-system, sans-serif;
+      opacity: 0.3;
     }
     main {
-      max-width: 600px;
+      max-width: 640px;
       margin: 0 auto;
       padding: 48px 24px 80px;
     }
+    .section { margin-bottom: 36px; }
     h2 {
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 2px;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 2.5px;
       text-transform: uppercase;
       color: #C8960C;
-      font-family: -apple-system, sans-serif;
-      margin-top: 36px;
       margin-bottom: 10px;
     }
     p {
       font-size: 15px;
-      line-height: 1.8;
+      font-weight: 300;
+      line-height: 1.85;
       color: #1A1510;
-      opacity: 0.8;
-      margin-bottom: 12px;
+      opacity: 0.78;
     }
-    .support {
-      margin-top: 48px;
-      padding-top: 24px;
+    p + p { margin-top: 10px; }
+    footer {
+      margin-top: 56px;
+      padding-top: 28px;
       border-top: 1px solid rgba(0,0,0,0.08);
-      font-family: -apple-system, sans-serif;
-      font-size: 13px;
-      color: #1A1510;
-      opacity: 0.45;
       text-align: center;
+      font-size: 13px;
+      color: rgba(26,21,16,0.4);
     }
-    .support a { color: #C8960C; text-decoration: none; }
+    footer a { color: #C8960C; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
+
+  <nav>
+    <a href="/margin-legal/" class="back">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Legal
+    </a>
+    <span class="app-name">Margin</span>
+  </nav>
+
   <header>
-    <a href="/margin-legal/">← Back</a>
+    <p class="eyebrow">Margin</p>
     <h1>Privacy Policy</h1>
-    <p>Last updated: May 2026</p>
+    <p class="updated">Last updated: May 2026</p>
   </header>
+
   <main>
-    <h2>Introduction</h2>
-    <p>Margin ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our journaling app.</p>
-
-    <h2>Data We Collect</h2>
-    <p>Margin is designed with privacy at its core. All journal entries, reflections, and personal writing are stored exclusively on your device and iCloud account. We do not have access to your journal content.</p>
-    <p>We collect minimal anonymous usage data to improve the app experience, such as app crash reports and aggregate feature usage statistics. This data cannot be used to identify you personally.</p>
-
-    <h2>iCloud Sync</h2>
-    <p>If you enable iCloud sync, your journal data is stored in your personal iCloud account under Apple's privacy and security policies. We do not store or access this data on our servers.</p>
-
-    <h2>Subscriptions</h2>
-    <p>When you subscribe to Margin Pro, payment is processed by Apple through the App Store. We receive only confirmation of your subscription status — never your payment details.</p>
-
-    <h2>Third-Party Services</h2>
-    <p>Margin does not share your personal data with third-party advertisers or analytics companies. We use Apple's standard crash reporting (via Xcode Organizer) for debugging purposes only.</p>
-
-    <h2>Data Retention</h2>
-    <p>Your journal data lives on your device and iCloud. Deleting the app removes all local data. You can manage iCloud data from your device Settings.</p>
-
-    <h2>Children's Privacy</h2>
-    <p>Margin is not directed to children under 13. We do not knowingly collect personal information from children.</p>
-
-    <h2>Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. We will notify you of any significant changes by updating the date at the top of this page.</p>
-
-    <div class="support">
-      Questions? Contact us at <a href="mailto:digvijay.pundir33@gmail.com">digvijay.pundir33@gmail.com</a>
+    <div class="section">
+      <h2>Introduction</h2>
+      <p>Margin ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our journaling app.</p>
     </div>
+    <div class="section">
+      <h2>Data We Collect</h2>
+      <p>Margin is designed with privacy at its core. All journal entries, reflections, and personal writing are stored exclusively on your device and iCloud account. We do not have access to your journal content.</p>
+      <p>We collect minimal anonymous usage data to improve the app experience, such as crash reports and aggregate feature usage statistics. This data cannot be used to identify you personally.</p>
+    </div>
+    <div class="section">
+      <h2>iCloud Sync</h2>
+      <p>If you enable iCloud sync, your journal data is stored in your personal iCloud account under Apple's privacy and security policies. We do not store or access this data on our servers.</p>
+    </div>
+    <div class="section">
+      <h2>Subscriptions</h2>
+      <p>When you subscribe to Margin Pro, payment is processed by Apple through the App Store. We receive only confirmation of your subscription status — never your payment details.</p>
+    </div>
+    <div class="section">
+      <h2>Third-Party Services</h2>
+      <p>Margin does not share your personal data with third-party advertisers or analytics companies. We use Apple's standard crash reporting for debugging purposes only.</p>
+    </div>
+    <div class="section">
+      <h2>Data Retention</h2>
+      <p>Your journal data lives on your device and iCloud. Deleting the app removes all local data. You can manage iCloud data from your device Settings.</p>
+    </div>
+    <div class="section">
+      <h2>Children's Privacy</h2>
+      <p>Margin is not directed to children under 13. We do not knowingly collect personal information from children.</p>
+    </div>
+    <div class="section">
+      <h2>Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. We will notify you of changes by updating the date at the top of this page.</p>
+    </div>
+    <footer>
+      Questions? Contact <a href="mailto:digvijay.pundir33@gmail.com">digvijay.pundir33@gmail.com</a>
+    </footer>
   </main>
+
 </body>
 </html>

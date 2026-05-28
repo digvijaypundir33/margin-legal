@@ -4,110 +4,165 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Terms of Use — Margin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: Georgia, 'Times New Roman', serif;
+      font-family: 'Inter', -apple-system, sans-serif;
       background: #FAF7F2;
       color: #1A1510;
       min-height: 100vh;
     }
-    header {
-      background: #12100E;
-      padding: 48px 24px 40px;
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(250, 247, 242, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(0,0,0,0.07);
+      padding: 0 24px;
+      height: 52px;
+      display: flex;
+      align-items: center;
     }
-    header a {
-      display: inline-block;
-      font-family: -apple-system, sans-serif;
-      font-size: 13px;
+    nav a.back {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 14px;
+      font-weight: 500;
       color: #C8960C;
       text-decoration: none;
-      margin-bottom: 16px;
-      opacity: 0.8;
     }
-    header a:hover { opacity: 1; }
+    nav a.back:hover { opacity: 0.75; }
+    nav .app-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: #1A1510;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    header {
+      background: #12100E;
+      padding: 52px 24px 44px;
+      text-align: center;
+    }
+    header .eyebrow {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: #C8960C;
+      margin-bottom: 12px;
+    }
     header h1 {
-      font-size: 28px;
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
       font-weight: 700;
       color: #F5EFE0;
+      line-height: 1.2;
     }
-    header p {
-      margin-top: 8px;
+    header .updated {
+      margin-top: 10px;
       font-size: 12px;
       color: #F5EFE0;
-      opacity: 0.4;
-      font-family: -apple-system, sans-serif;
+      opacity: 0.3;
     }
     main {
-      max-width: 600px;
+      max-width: 640px;
       margin: 0 auto;
       padding: 48px 24px 80px;
     }
+    .section { margin-bottom: 36px; }
     h2 {
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 2px;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 2.5px;
       text-transform: uppercase;
       color: #C8960C;
-      font-family: -apple-system, sans-serif;
-      margin-top: 36px;
       margin-bottom: 10px;
     }
     p {
       font-size: 15px;
-      line-height: 1.8;
+      font-weight: 300;
+      line-height: 1.85;
       color: #1A1510;
-      opacity: 0.8;
-      margin-bottom: 12px;
+      opacity: 0.78;
     }
-    .support {
-      margin-top: 48px;
-      padding-top: 24px;
+    p + p { margin-top: 10px; }
+    footer {
+      margin-top: 56px;
+      padding-top: 28px;
       border-top: 1px solid rgba(0,0,0,0.08);
-      font-family: -apple-system, sans-serif;
-      font-size: 13px;
-      color: #1A1510;
-      opacity: 0.45;
       text-align: center;
+      font-size: 13px;
+      color: rgba(26,21,16,0.4);
     }
-    .support a { color: #C8960C; text-decoration: none; }
+    footer a { color: #C8960C; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
+
+  <nav>
+    <a href="/margin-legal/" class="back">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Legal
+    </a>
+    <span class="app-name">Margin</span>
+  </nav>
+
   <header>
-    <a href="/margin-legal/">← Back</a>
+    <p class="eyebrow">Margin</p>
     <h1>Terms of Use</h1>
-    <p>Last updated: May 2026</p>
+    <p class="updated">Last updated: May 2026</p>
   </header>
+
   <main>
-    <h2>Acceptance of Terms</h2>
-    <p>By downloading or using Margin, you agree to be bound by these Terms of Use. If you do not agree, please do not use the app.</p>
-
-    <h2>License</h2>
-    <p>We grant you a personal, non-transferable, non-exclusive license to use Margin on your Apple devices for personal, non-commercial purposes.</p>
-
-    <h2>Margin Pro Subscription</h2>
-    <p>Margin Pro is offered as an auto-renewable subscription. Payment is charged to your Apple ID account at confirmation of purchase. Subscriptions automatically renew unless auto-renew is turned off at least 24 hours before the end of the current period.</p>
-    <p>You can manage and cancel subscriptions in your App Store account settings at any time.</p>
-
-    <h2>Free Trial</h2>
-    <p>Margin Pro includes a 7-day free trial for new subscribers. Any unused portion of the free trial is forfeited upon purchase of a subscription.</p>
-
-    <h2>Your Content</h2>
-    <p>You retain full ownership of all journal entries and content you create in Margin. We claim no rights over your writing.</p>
-
-    <h2>Acceptable Use</h2>
-    <p>You agree not to misuse the app, attempt to reverse engineer it, or use it for any unlawful purpose.</p>
-
-    <h2>Disclaimer</h2>
-    <p>Margin is provided "as is" without warranties of any kind. We are not responsible for any loss of data. We recommend enabling iCloud backup.</p>
-
-    <h2>Changes to Terms</h2>
-    <p>We may update these terms from time to time. Continued use of the app after changes constitutes acceptance of the new terms.</p>
-
-    <div class="support">
-      Questions? Contact us at <a href="mailto:digvijay.pundir33@gmail.com">digvijay.pundir33@gmail.com</a>
+    <div class="section">
+      <h2>Acceptance of Terms</h2>
+      <p>By downloading or using Margin, you agree to be bound by these Terms of Use. If you do not agree, please do not use the app.</p>
     </div>
+    <div class="section">
+      <h2>License</h2>
+      <p>We grant you a personal, non-transferable, non-exclusive license to use Margin on your Apple devices for personal, non-commercial purposes.</p>
+    </div>
+    <div class="section">
+      <h2>Margin Pro Subscription</h2>
+      <p>Margin Pro is offered as an auto-renewable subscription. Payment is charged to your Apple ID account at confirmation of purchase. Subscriptions automatically renew unless auto-renew is turned off at least 24 hours before the end of the current period.</p>
+      <p>You can manage and cancel subscriptions in your App Store account settings at any time.</p>
+    </div>
+    <div class="section">
+      <h2>Free Trial</h2>
+      <p>Margin Pro includes a 7-day free trial for new subscribers. Any unused portion of the free trial is forfeited upon purchase of a subscription.</p>
+    </div>
+    <div class="section">
+      <h2>Your Content</h2>
+      <p>You retain full ownership of all journal entries and content you create in Margin. We claim no rights over your writing.</p>
+    </div>
+    <div class="section">
+      <h2>Acceptable Use</h2>
+      <p>You agree not to misuse the app, attempt to reverse engineer it, or use it for any unlawful purpose.</p>
+    </div>
+    <div class="section">
+      <h2>Disclaimer</h2>
+      <p>Margin is provided "as is" without warranties of any kind. We are not responsible for any loss of data. We recommend enabling iCloud backup.</p>
+    </div>
+    <div class="section">
+      <h2>Changes to Terms</h2>
+      <p>We may update these terms from time to time. Continued use of the app after changes constitutes acceptance of the new terms.</p>
+    </div>
+    <footer>
+      Questions? Contact <a href="mailto:digvijay.pundir33@gmail.com">digvijay.pundir33@gmail.com</a>
+    </footer>
   </main>
+
 </body>
 </html>

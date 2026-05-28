@@ -4,47 +4,56 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Margin — Legal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: Georgia, 'Times New Roman', serif;
+      font-family: 'Inter', -apple-system, sans-serif;
       background: #FAF7F2;
       color: #1A1510;
       min-height: 100vh;
     }
     header {
       background: #12100E;
-      padding: 48px 24px 40px;
+      padding: 64px 24px 52px;
       text-align: center;
     }
+    header .eyebrow {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: #C8960C;
+      margin-bottom: 14px;
+    }
     header h1 {
-      font-size: 28px;
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
       font-weight: 700;
       color: #F5EFE0;
-      letter-spacing: 0.5px;
+      line-height: 1.2;
     }
-    header p {
-      margin-top: 8px;
+    header p.sub {
+      margin-top: 10px;
       font-size: 14px;
-      color: #C8960C;
-      letter-spacing: 2px;
-      font-family: -apple-system, sans-serif;
-      font-weight: 600;
-      text-transform: uppercase;
+      font-weight: 300;
+      color: #F5EFE0;
+      opacity: 0.4;
     }
     main {
-      max-width: 600px;
+      max-width: 480px;
       margin: 0 auto;
-      padding: 56px 24px 80px;
+      padding: 48px 24px 80px;
     }
     h2 {
-      font-size: 13px;
+      font-size: 10px;
       font-weight: 600;
-      letter-spacing: 2px;
+      letter-spacing: 2.5px;
       text-transform: uppercase;
       color: #C8960C;
-      font-family: -apple-system, sans-serif;
-      margin-bottom: 24px;
+      margin-bottom: 16px;
     }
     .card {
       background: #FFFFFF;
@@ -52,6 +61,7 @@
       border-radius: 16px;
       overflow: hidden;
       margin-bottom: 40px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.05);
     }
     .card a {
       display: flex;
@@ -64,32 +74,29 @@
     }
     .card a:hover { background: #F5EFE0; }
     .card a + a { border-top: 1px solid rgba(0,0,0,0.06); }
-    .card a span.title {
-      font-size: 17px;
+    .card a .title {
+      font-size: 16px;
       font-weight: 400;
     }
-    .card a span.arrow {
-      font-size: 16px;
+    .card a .arrow {
+      font-size: 18px;
       color: #C8960C;
-      opacity: 0.7;
+      opacity: 0.6;
     }
     .support {
       text-align: center;
-      font-family: -apple-system, sans-serif;
       font-size: 13px;
-      color: #1A1510;
-      opacity: 0.45;
+      color: rgba(26,21,16,0.4);
     }
-    .support a {
-      color: #C8960C;
-      text-decoration: none;
-    }
+    .support a { color: #C8960C; text-decoration: none; }
+    .support a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
   <header>
-    <h1>Margin</h1>
-    <p>Legal</p>
+    <p class="eyebrow">Margin App</p>
+    <h1>Legal</h1>
+    <p class="sub">Policies & Terms</p>
   </header>
   <main>
     <h2>Documents</h2>
